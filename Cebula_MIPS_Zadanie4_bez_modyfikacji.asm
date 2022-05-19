@@ -11,7 +11,7 @@ wrongargprompt: .asciiz "Incorrect argument inputted! Try again:\n"
 dp1: .double 0
 .text
 main:
-#pocz¹tek programu (pytanie o rodzaj operacji)
+#poczÂ¹tek programu (pytanie o rodzaj operacji)
 la $a0, mainprompt
 li $v0, 4
 syscall
@@ -104,7 +104,3 @@ syscall
 bnez $v0, main
 li $v0, 10
 syscall
-
-eret
-teqi
-mfc
